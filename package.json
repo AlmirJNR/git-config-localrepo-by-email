@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cli.js",
+  "type": "module",
+  "scripts": {},
+  "author": "Almir Junior",
+  "license": "MIT",
+  "bin": {
+    "gitconfig": "./cli.js"
+  },
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "inquirer": "^8.2.0"
+  }
+}
