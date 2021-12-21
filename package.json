@@ -1,6 +1,6 @@
 {
-  "name": "nodejs-cli",
-  "version": "1.0.0",
+  "name": "@almir/github-cli",
+  "version": "1.0.1",
   "description": "",
   "main": "cli.js",
   "type": "module",
