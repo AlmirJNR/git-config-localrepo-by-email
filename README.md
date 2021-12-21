@@ -2,7 +2,7 @@
 
 ### Allow cli to be part of your system
 ```bash
-node sync
+npm i -g https://github.com/AlmirJNR/git-config-localrepo-by-email
 ```
 
 ### Use cli
