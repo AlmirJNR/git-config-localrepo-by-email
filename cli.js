@@ -4,6 +4,12 @@ import { execSync } from 'child_process';
 import inquirer from 'inquirer';
 import chalk from 'chalk';
 
+try {
+  execSync('git rev-parse --is-inside-work-tree');
+} catch (error) {
+  process.exit();
+}
+
 const answer = await inquirer.prompt([
   {
     type: 'list',
