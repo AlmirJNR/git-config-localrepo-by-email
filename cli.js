@@ -15,7 +15,7 @@ const answer = await inquirer.prompt([
     type: 'list',
     message: 'Which user do you want to config?',
     name: 'cli',
-    choices: ['personal GitHub', 'pluritech GitLab'],
+    choices: ['personal GitHub'],
   }
 ]);
 
@@ -40,10 +40,6 @@ try {
 
     console.log('git user.email is set to ' + chalk.greenBright(email));
 
-  } else if (answer.cli === 'pluritech GitLab') {
-    const email = emails[1];
-    execSync(`git config user.email "${email}"`);
-    console.log('git user.email is set to ' + chalk.greenBright(email));
   }
 } catch (error) {
   console.error(error.toString());
